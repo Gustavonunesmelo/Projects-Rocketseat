@@ -120,13 +120,17 @@
             </div>
             <div class="input-wrapper">
               <label for="phone">Telefone</label>
-              <input type="text" id="phone" name="phone">
+              <input type="text" id="phone" name="phone"
+              placeholder="(10) 9 8765-4321">
             </div>
             <div class="input-wrapper">
               <label for="mail">Email</label>
-              <input type="email" id="mail" name="mail" >
-              <img src="asset/icon/alert-circle.svg" alt="Ícone de alerta">
-              <span>Insira um e-mail válido</span>
+              <input type="email" id="mail" name="mail" required>
+
+              <div class="error">
+                <img src="asset/icon/alert-circle.svg" alt="Ícone de alerta">
+                <span>Insira um e-mail válido</span>             
+              </div>
             </div>
           </fieldset>
 
@@ -139,25 +143,69 @@
 
             <div class="radio-wrapper">
               <div class="radio-inner">
-                <div class="radio-image">
-                  <input type="radio" name="study-shift"
-                  value="morning" id="morning">
+                <div class="radio-image"></div>
+                  <input type="radio" name="study-shift" value="morning" id="morning">
                   <img src="asset/icon/sun-cloud-02.svg" alt="ìcone de sol com nuvem">
                   <label for="morning">Manhã</label>
-                </div>
               </div>
 
               <div class="radio-inner">
-                <div class="radio-image">
-                  <input type="radio" name="study-shift"
-                  value="evening" id="evening">
+                <div class="radio-image"></div>
+                  <input type="radio" name="study-shift" value="evening" id="evening">
                   <img src="asset/icon/sun-02.svg" alt="ìcone de sol">
                   <label for="evening">Tarde</label>
-                </div>
+                
               </div>
             </div>
-          </fieldset>
 
+            <div class="input-wrapper">
+              <label>Em qual esporte você gostaria de inscrever seu filho?</label>
+
+              <div class="radio-wrapper">
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="sport" id="football">
+                  <img src="asset/icon/football.svg" alt="Ícone de uma bola de futebol">
+                  <label for="football">Futebol</label>
+                </div>
+
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="sport" id="basketball">
+                  <img src="asset/icon/basketball-02.svg" alt="Ícone de uma bola de basquete">
+                  <label for="basketball">Basquete</label>
+                </div>
+
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="sport" id="swimming">
+                  <img src="asset/icon/swimming.svg" alt="Ícone de Natação">
+                  <label for="swimming">Natação</label>
+                </div>
+
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="sport" id="yoga">
+                  <img src="asset/icon/yoga-02.svg" alt="Ícone de Yoga">
+                  <label for="yoga">Yoga</label>
+                </div>
+              
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="sport" id="volleyball">
+                  <img src="asset/icon/volleyball.svg" alt="Ícone de volleyball">
+                  <label for="volleyball">Volley</label>
+                </div>
+
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="sport" id="boxing">
+                  <img src="asset/icon/boxing-glove-01.svg" alt="Ícone de boxing">
+                  <label for="boxing">Boxe</label>
+                </div>
+                
+            </div>
+          </fieldset>
         </form>
       </div>
     </main>
