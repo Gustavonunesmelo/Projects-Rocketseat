@@ -12,7 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: #18181B;
+ 
 }
 
 :root {
@@ -51,7 +51,7 @@ html {
 }
 
 body {
-  color: var(--background-color);
+  background-color:  var(--bg-color);
 }
 
 h1, h2, h3 {
@@ -90,6 +90,11 @@ a:hover {
 
 ul[role="list"] {
   list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
 }
 
 @media (width >= 80em) {
